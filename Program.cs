@@ -4,7 +4,7 @@ using System.Diagnostics;
 namespace poc_database {
     public class Program {
         public static void Main() {
-            /* using (var db = new DatabaseContext()) {
+            using (var db = new DatabaseContext()) {
 
                 var tire = new Tire(){
                     TireId = Guid.NewGuid().ToString(),
@@ -20,21 +20,21 @@ namespace poc_database {
                 db.Tires.Add(tire);
                 db.SaveChanges();
 
-                var tires = db.Tire;
-                foreach(var tire in tires) {
+                var tires = db.Tires;
+                foreach(var _tire in tires) {
                     Console.WriteLine("{0}; {1} {2}/{3}R{4} {5}{6} {7}; {8}", 
-                    tire.TireId,
-                    tire.Brand,
-                    tire.Width,
-                    tire.Heigth,
-                    tire.RimSize,
-                    tire.LoadIndex,
-                    tire.SpeedIndex,
-                    tire.Description,
-                    tire.Price
+                    _tire.TireId,
+                    _tire.Brand,
+                    _tire.Width,
+                    _tire.Height,
+                    _tire.RimSize,
+                    _tire.LoadIndex,
+                    _tire.SpeedIndex,
+                    _tire.Description,
+                    _tire.Price
                     );
                 }
-            } */
+            }
         }
     }
 }
