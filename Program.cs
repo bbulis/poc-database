@@ -22,17 +22,7 @@ namespace poc_database {
 
                 var tires = db.Tires;
                 foreach(var _tire in tires) {
-                    Console.WriteLine("{0}; {1} {2}/{3}R{4} {5}{6} {7}; {8}", 
-                    _tire.TireId,
-                    _tire.Brand,
-                    _tire.Width,
-                    _tire.Height,
-                    _tire.RimSize,
-                    _tire.LoadIndex,
-                    _tire.SpeedIndex,
-                    _tire.Description,
-                    _tire.Price
-                    );
+                    Console.WriteLine(_tire.ToString());
                 }
             }
         }

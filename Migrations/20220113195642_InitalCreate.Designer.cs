@@ -11,8 +11,8 @@ using poc_database;
 namespace poc_database.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220109201222_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220113195642_InitalCreate")]
+    partial class InitalCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

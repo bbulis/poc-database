@@ -35,6 +35,21 @@ namespace poc_database {
         public char SpeedIndex {get; set;}
         public string Description {get; set;}
         public double Price {get; set;}
+
+        public override string ToString()
+        {
+            return String.Format("{0}; {1} {2}/{3}R{4} {5}{6} {7}; {8}", 
+                    this.TireId,
+                    this.Brand,
+                    this.Width,
+                    this.Height,
+                    this.RimSize,
+                    this.LoadIndex,
+                    this.SpeedIndex,
+                    this.Description,
+                    this.Price);
+        }
+
     }
 
 }
